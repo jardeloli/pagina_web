@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>AnimeFlix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/x-icon" href="./animeflix.ico" />
+    <link rel="stylesheet" href="01-site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="box-title">
+            <h1>AnimeFlix</h1>
+            <p class="paragrafo1">Acesso ao maior catálogo de animes do país. </p>
+            <img src="cinema.svg"/>
+        </div>
+        <form>
+            <div class="box-login">
+                <div class="caixa-direita">
+                    <h2>Login</h2>
+                   
+                    <div class="caixas-entrada">
+                        <input class="entrar" type="email" id="txtEmail" required />
+                        <i class="fa-solid fa-envelope"></i>
+                        <label for="txtEmail">E-mail</label>
+                    </div>
+
+                    <div class="caixas-entrada">
+                        <input class="entrar" type="password" id="txtSenha" required />
+                        <i class="fa-solid fa-lock"></i>
+                        <label for="txtSenha">Senha</label>
+                    </div>
+                    <p class="paragrafo2">Esqueceu a senha? <a href="03-recuperar-senha.html">Recuperar senha</a> </p>
+                    <br />
+                    <br>
+                    <button id="botaoEntrar" onclick="botao_click()">Entrar</button>
+                    
+                    <span id="spanErro" class="span"></span>
+                </div>
+                <div class="boxCadastrar">
+                    <p class="paragrafo2"> Primeira vez aqui? <a href="02-cadastre-se.html">Cadastre-se</a></p>
+                </div>
+            </div>
+        </form>
+
+    <script src="01-site.js"></script>        
+    </div>
+</body>
+    
+</html>

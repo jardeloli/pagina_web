@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>Cadastre-se</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/x-icon" href="./animeflix.ico" />
+    <link rel="stylesheet" href="02-cadastre-se.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <form>
+        <div class="container">
+           
+            <div class="boxEsquerda">
+                <h1>AnimeFlix</h1>
+                <img src="cadastre-se.svg" height="200"/>
+            </div>
+            
+            <div class="boxDireita">
+                <div class="boxFirst">
+
+                </div>
+                <div class="caixasBotoes">
+                    <div class="cadastro">
+                        <h2>Cadastre-se</h2>
+                    </div>
+                    <div class="boxFormulario">
+                        <div class="left">
+                            <input class="input" type="text" id="txtNome" required />
+                            <label for="txtNome">Nome</label>
+                        </div>
+                        <div class="right">
+                            <input class="input" type="text" id="txtSobreNome" required />
+                            <label for="txtSobreNome">Sobrenome</label>
+                        </div>
+                    </div>
+
+                    <div class="boxFormulario">
+                        <div class="left">
+                            <input class="input" type="text" id="txtUser" required />
+                            <label for="txtUser">Usuário</label>
+                        </div>
+                        <div class="right">
+                            <input class="input" type="email" id="txtEmail" required />
+                            <label for="txtEmail">E-mail</label>
+                        </div>
+                    </div>
+
+                    <div class="boxFormulario">
+                        <div class="left">
+                            <input class="input" type="password" id="txtSenha" required />
+                            <label for="txtSenha">Senha</label>
+                        </div>
+                        <div class="right">
+                            <input class="input" type="text" name="date" onfocus="(this.type='date')" onblur="if(!this.value) this.type='text'" id="txtData" required />
+                            <label for="txtData">Data de Nascimento</label>
+                        </div>
+                    </div>
+
+                    <div class="boxFormulario">
+                        <div class="left">
+                            <input class="input" type="email" id="txtEmailRecuperar" required />
+                            <label for="txtEmailRecuperar">E-mail para recuperar senha</label>
+                        </div>
+
+                        <div class="right">
+                            <div class="botao">
+                                <button id="btnCadastrar" onclick="botao_click()">Cadastrar</button>
+                                <span id="spnErro"></span>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <p>Já possui cadastro? <a href="01-site.html"> Login</a></p>
+
+                    <script src="02-cadastre-se.js"></script>
+
+                </div>
+                
+
+            </div>
+        </div>
+    </form>
+    
+
+
+</body>
+</html>

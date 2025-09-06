@@ -1,0 +1,242 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: Arial;
+}
+
+
+
+.container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background: #03202d;
+}
+
+.box-title {
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.caixa-direita {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-radius: 20px;
+    border: 0;
+    background: #041720;
+    box-shadow: 0px 10px 40px 8px #09e9f6;
+    padding: 1px 35px 30px;
+}
+
+.boxCadastrar {
+    width: 40%;
+    height: 6px;
+    border: 2px;
+    border-style: solid;
+    padding: 30px 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px 0px;
+    background: #041720;
+    box-shadow: 0px 10px 40px 8px #09e9f6;
+}
+
+.entrar {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1px 5px 0px;
+    border: 0px;
+    background: #353b3b00;
+    border-bottom: 2px solid grey;
+    height: 30px;
+    outline: none;
+    color: white;
+    font-family: Arial;
+    font-size: 16px
+}
+
+
+
+h1{
+    color: #09e9f6;
+    font-size: 150px;
+    text-shadow: 10px 10px #00e2ff61;
+    font-family: Impact;
+    margin-left:25px
+}
+.paragrafo1 {
+    font-size: 40px;
+    text-shadow: 3px 5px #8f00ff;
+    color: white;
+    margin-left: 25px;
+
+    
+}
+.paragrafo2 {
+    color: white;
+    font-size: 16px;
+    margin: 4px 0px 0px 0px;
+    
+}
+
+a {
+    color: #09e9f6;
+    text-decoration: none;
+}
+
+h2 {
+    display:flex;
+    font-size: 60px;
+    padding-bottom: 15px;
+    margin: 0px;
+    font-family: Impact;
+    color: #09e9f6;
+    text-shadow: 10px 10px #00e2ff61
+}
+.caixas-entrada {
+    width: 100%;
+    position: relative;
+    display:flex;
+    align-items:flex-start;
+    align-content:center;
+    margin: 10px
+}
+.caixas-entrada label {
+    position: absolute;
+    left: 0;
+    transition: all 0.2s;
+    color: white;
+    cursor: text
+}
+.caixas-entrada i {
+    color: grey;
+    position: absolute;
+    right: 5px;
+    
+}
+
+form .box-login .caixas-entrada .entrar:focus ~ label,
+form .box-login .caixas-entrada .entrar:valid ~ label,
+form .box-login .caixas-entrada .entrar:focus ~ i{
+    transform: translateY(-15px);
+    color: #ffffff94;
+    font-size: 14px
+}
+
+
+button {
+    margin: 0px 10px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    background: purple;
+    color: white;
+    font-size: 28px;
+    font-family: Impact;
+    border-radius: 8px;
+    box-shadow: 0px 10px 40px 1px purple;
+    border-width:0;
+    text-transform: uppercase;
+    font-weight: 200;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.span {
+    border: #00000000 1px solid;
+    border-radius: 8px;
+    padding: 2px 2px;
+    display: none;
+    margin-top: 15px;
+    color: #d50505;
+}
+
+@media only sreen and (max-width: 950px) {
+    .caixa-direita{
+        width: 80%
+    }
+}
+
+@media only screen and (max-width:426px){
+    .container{
+        display:flex;
+        flex-direction: column;
+        align-content: center;
+        height: 100vh
+    }
+
+    .box-title{
+        height: 50vh;
+        width: 50vh
+
+    }
+
+    .box-login{
+        height: 50vh;
+        width: 100vw
+    }
+    .caixa-direita {
+        width: 70%;
+        height: 95%;
+        padding: 0px 10px
+    }
+    h1{
+        font-size: 75px;
+        margin:0
+    }
+    p{
+        display: none;
+
+    }
+
+    h2{
+        font-size:40px
+    }
+
+    @media only screen and (max-width: 320px) {
+      
+        .box-login{
+            height: 35vh;
+            width: 380px
+        }
+        
+        .caixas-direita{
+           height: 50%;
+       }
+        
+        .entrar {
+            font-size: 14px
+        }
+
+        h1 {
+            font-size: 65px;
+            margin: 0
+        }
+
+        img{
+            width: 320px
+        }
+
+
+    }    
+}
+
